@@ -1,6 +1,6 @@
 # Solving Leet Code
 
-1 at a time
+One problem at a time
 
 www.leetcode.com
 
