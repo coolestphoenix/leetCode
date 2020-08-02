@@ -1,9 +1,9 @@
-Approach #1: Brute Force [Time Limit Exceeded]
+/*Approach #1: Brute Force [Time Limit Exceeded]
 
 Intuition and Algorithm
 
 For each index i in the given string, let's remove that character, then check if the resulting string is a palindrome. If it is, (or if the original string was a palindrome), then we'll return true
-
+*/
 class Solution {
     public boolean isPalindrome(CharSequence s) {
         for (int i = 0; i < s.length() / 2; i++) {
@@ -25,7 +25,7 @@ class Solution {
     }
 }
 
-Complexity Analysis
+/*Complexity Analysis
 
 Time Complexity: 
 O
@@ -59,7 +59,7 @@ If the beginning and end characters of a string are the same (ie. s[0] == s[s.le
 Algorithm
 
 Suppose we want to know whether s[i], s[i+1], ..., s[j] form a palindrome. If i >= j then we are done. If s[i] == s[j] then we may take i++; j--. Otherwise, the palindrome must be either s[i+1], s[i+2], ..., s[j] or s[i], s[i+1], ..., s[j-1], and we should check both cases.
-
+*/
 class Solution {
     public boolean isPalindromeRange(String s, int i, int j) {
         for (int k = i; k <= i + (j - i) / 2; k++) {
@@ -78,7 +78,7 @@ class Solution {
         return true;
     }
 }
-
+/*
 Complexity Analysis
 
 Time Complexity: 
@@ -100,4 +100,4 @@ O
 (
 1
 )
-O(1) additional complexity. Only pointers were stored in memory.
+O(1) additional complexity. Only pointers were stored in memory.*/
